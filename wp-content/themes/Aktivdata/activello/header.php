@@ -28,6 +28,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="hfeed site">
 <?php
 		$show_logo = true;
@@ -46,10 +47,12 @@
 			$show_logo = false;
 			$show_title = true;
 		}?>
+		
 	<header id="masthead" class="site-header" role="banner">
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="row">
+				<p class="language_selector1"><?php language_selector(); ?>	</p>
 					<div class="site-navigation-inner col-sm-12">
 						<div class="navbar-header">
 							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -57,36 +60,40 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
+								
 							</button>
 						</div>
 						<div class="nav-search">
-<div id="logo">
-				<?php echo is_home() ?  '<h1 class="site-name">' : '<span class="site-name">'; ?>
-                    
-                <?php 
+								<div id="logo">
+								<?php echo is_home() ?  '<h1 class="site-name">' : '<span class="site-name">'; ?>
+									
+								<?php 
 
-                if( $show_logo && has_custom_logo() ) {
-                	the_custom_logo();
-				}else{?>
-					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php  bloginfo( 'name' ); ?></a>
-				<?php } ?>
-                    
-				<?php echo is_home() ?  '</h1>' : '</span>'; ?><!-- end of .site-name -->
+								if( $show_logo && has_custom_logo() ) {
+									the_custom_logo();
+								}else{?>
+									<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php  bloginfo( 'name' ); ?></a>
+								<?php } ?>
+									
+								<?php echo is_home() ?  '</h1>' : '</span>'; ?><!-- end of .site-name -->
 
-				<?php if( $show_tagline && get_bloginfo( 'description' ) != "" ) : ?>
-					<div class="tagline"><?php bloginfo( 'description' ); ?></div>
-				<?php endif; ?>
-			</div><!-- end of #logo -->
+								<?php if( $show_tagline && get_bloginfo( 'description' ) != "" ) : ?>
+									<div class="tagline"><?php bloginfo( 'description' ); ?></div>
+								<?php endif; ?>
+							</div><!-- end of #logo -->
 
-			<?php if( ! is_front_page() || ! is_home() ) : ?>
-			<div id="line"></div>
-			<?php endif; ?>						
-						</div><?php activello_header_menu(); // main navigation ?>
-						<div class="nav-search">FI-SW</div>
+							<?php if( ! is_front_page() || ! is_home() ) : ?>
+							
+							<?php endif; ?>					
+						</div>
+						<?php activello_header_menu(); // main navigation ?>
+						
 						
 					</div>
+					
 				</div>
 			</div>
+			
 		</nav><!-- .site-navigation -->
 
 	</header><!-- #masthead -->

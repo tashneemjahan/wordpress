@@ -1,29 +1,34 @@
 <?php
-   if(!empty($_POST["forgot-password"])){
-		$conn = mysqli_connect("localhost", "root", "", "wordpress");
+   include("wp-config.php");
+   session_start();
+   
+  	if(!empty($_POST['username_email']))
+	{
 		
-		$condition = "";
-		if(!empty($_POST["username"])) 
-			$condition = " username = '" . $_POST["username"] . "'";
-		if(!empty($_POST["user-email"])) {
-			if(!empty($condition)) {
-				$condition = " and ";
-			}
-			$condition = " username_email = '" . $_POST["user-email"] . "'";
+		$db = new mysqli("localhost","root","","wordpress");
+		// Check connection
+		if ($conn->connect_error) {
+			die("Connection failed: " . $conn->connect_error);
 		}
+		// create query
+		$query = "SELECT username FROM wp_register_user WHERE email='".$_POST['username_email']."'";
+		echo $query;
+		// execute query
+		$result  = $db->query($query);
+		while($row = $result->fetch_assoc()) 
+		{
+			$username = $row["username"];
+			echo $password_data;
 		
-		if(!empty($condition)) {
-			$condition = " where " . $condition;
-		}
-
-		$sql = "Select * from admin " . $condition;
-		$result = mysqli_query($conn,$sql);
-		$user = mysqli_fetch_array($result);
-		
-		if(!empty($user)) {
-			require_once("forget-password-mail.php");
-		} else {
-			$error_message = 'No User Found';
+			// if $password_data match it mean their is an existing record that match base on your query above 
+			if($username){
+				header("Location: http://localhost/wordpress/forgetpasswordform_new?id=$username");
+			} 
+				else 
+				{
+					 $id="Username or Password is Wrong..!!";
+					 header("Location: http://localhost/wordpress/forgetpasswordform?id=$id");
+				}
 		}
 	}
 ?>

@@ -4,9 +4,12 @@
  *
  * @package activello
  */
+ 
+ 
 ?>
 
 <?php the_post_thumbnail( 'activello-featured', array( 'class' => 'single-featured' )); ?>
+
 
 <div class="post-inner-content">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

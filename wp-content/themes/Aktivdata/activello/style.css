@@ -1,13 +1,11 @@
 /*
-Theme Name: Activello
-Theme URI: https://colorlib.com/wp/themes/activello/
-Author: Colorlib
-Author URI: http://colorlib.com
-Description: Activello is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Theme is also multilingual ready and translated in several languages. This awesome blog theme is also SEO friendly helping you to achieve the highest positions on Google. Activello is the only WordPress blog theme you will ever need.
+Theme Name: Aktivdata
+Author: Tashneem
+Description: Aktivdata is a clean and minimal WordPress blog theme with premium look and feel well suited for food, fashion, travel, lifestyle, sports and any other awesome blogs. This theme features WooCommerce integration that allows you to create fully functional eCommerce website side by side with your blog. This theme has several customization options that are available WordPress Theme Customizer. Theme is also multilingual ready and translated in several languages. This awesome blog theme is also SEO friendly helping you to achieve the highest positions on Google. Aktivdata is the only WordPress blog theme you will ever need.
 Version: 1.2.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: activello
+Text Domain: Aktivdata
 Domain Path: /languages/
 Tags: grid-layout, footer-widgets, blog, education, entertainment, food-and-drink, news, photography, portfolio, e-commerce
 
@@ -17,6 +15,163 @@ This theme, like WordPress, is licensed under the GPL.
 sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
 */
+
+
+#myDIV
+{
+	display: none;
+text-align: left;
+color: black;
+margin-top: -15px;
+}
+.language_selector1
+{
+	float:right;
+}
+.language_a
+	{
+		color: white;
+	padding: 8px;
+	}
+
+.new-col
+{
+	padding:30px;
+	
+}
+#center
+{
+	width: 240px;
+font-size: 16px;
+height: 55px;
+}
+#nf-field-1:before {
+ font-family: 'FontAwesome';
+ content: "\f1ae"; /* Icon name */
+ padding: 2px 7px 0 0;
+     border: 1px solid #B7ABAB;
+
+}
+
+/* Email field */
+#nf-field-2-wrap:before {
+ font-family: 'FontAwesome';
+ content: "\f2ba"; /* Icon name */
+ padding: 2px 7px 0 0;
+ 
+}
+
+/* Phone field */
+#nf-field-20-wrap:before {
+ font-family: 'FontAwesome';
+ content: "\f095"; /* Icon name */
+ padding: 2px 7px 0 0;
+}
+
+/* Message field */
+#nf-field-3-wrap:before {
+ font-family: 'FontAwesome';
+ content: "\f075"; /* Icon name */
+ padding: 2px 7px 0 0;
+}
+.ninja-forms-field {
+ padding: 12px;
+     border: 1px solid #B7ABAB;
+}
+ 
+ #nf-field-4 {
+ background-color: black;
+width: 150px;
+color: white;
+font-size: 22px;
+float:right;
+ }
+#nf-field-65
+{
+	padding:16px;
+}
+#nf-field-4:hover{
+ background-color: black;
+ box-shadow: 1px 1px 2px white;
+ text-shadow: 5px 5px 8px black;
+ }
+body {
+    color: #696969;
+    background-color: #FFFFFF;
+    word-wrap: break-word;
+    font-family: 'Lora', serif;
+    line-height: 2;
+    font-size: 14px;
+	radius:5;
+	
+}
+
+.contact-to-top:hover {
+    background: #a161bf;
+    opacity: .8;
+}
+.vertical_text
+{
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+.contact-to-top
+{
+	 background: rgba(100, 100, 100, 0.4);
+   color: #FFF;
+	bottom: 30%;
+	cursor: pointer;
+	position: fixed;
+	right: 0px;
+	z-index: 999;
+	font-size: 24px;
+	text-align: center;
+	line-height: 15px;
+	width: 49px;
+	
+	background-color: red;
+    -webkit-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+
+
+
+.table_form
+{
+	border:none;
+}
+.imgcontainer_table
+{
+	text-align: left;
+	width:400px;
+}
+table.table_subscription
+{
+	width:400px;
+	border:none !important;
+	
+}
+
+.pay_button
+{
+	margin-left: auto;
+    margin-right: auto ;
+}
+.order_table
+{ 
+
+	border-collapse: collapse;
+    width: 100%;
+}
+td, th {    
+    height: 21px;
+text-align: left;
+padding: 3px;
+}
+
+
 form {
     border: 3px solid #f1f1f1;
 }
@@ -70,9 +225,7 @@ img.avatar {
 }
 
 /* Add padding to containers */
-.container {
-    padding: 16px;
-}
+
 
 /* The "Forgot password" text */
 span.psw {
@@ -117,21 +270,23 @@ span.psw {
 
 .form_order
 {
-	    height: auto;
+	height: auto;
     width: 100%;
     background-color: #ede7e7;
-    border: 5px solid #3c92b1;
+    border: 35px solid #3c92b1;
     padding: 20px;
 
 }
 .banner-frontpage
 {
 	width: 120%;
-height: 400px;
-background-color: #aca4a4;
-margin-left: -10%;
-padding:20px;
+	height: 240px;
+	background-color: #2e2c2c;;
+	margin-left: -10%;
+	padding:20px;
+	color:white;
 }
+
 .box-image
 {
 	float:left;
@@ -148,15 +303,7 @@ padding:20px;
 	width:16%;
 	margin:10px;
 }
-body {
-    color: #696969;
-    background-color: #FFFFFF;
-    word-wrap: break-word;
-    font-family: 'Lora', serif;
-    line-height: 2;
-    font-size: 14px;
-	radius:5;
-}
+
 .contact-form-new
 {
 	height:auto;
@@ -189,8 +336,9 @@ float: right;
 
 .footer-text
 {
-
-font-size: 14px;
+text-align:left;
+color: white;
+font-size: 15px;
 line-height: -moz-block-height;	
 }
 .image-box
@@ -209,6 +357,14 @@ width: 287px;
 border:1px solid #c2ced8;
 padding-top: 20px;
 }
+.boxes
+{
+	
+}
+.boxes_prices
+{
+	background-color:#bb92d3;
+}
 .box1
 {
 	height:300px;
@@ -219,9 +375,10 @@ padding-top: 20px;
 }
 .text-para
 {
-	color:white;
-	font-size:15px;
-	padding:13px;
+	color: black;
+font-size: 14px;
+padding: 0px;
+text-align: left;
 }
 .main-box
 {
@@ -238,7 +395,7 @@ a {
     transition: all 0.3s;
 }
 a:hover, a:focus {
-    color: #a161bf;
+    color: red;
     text-decoration: none;
 }
 a:focus {
@@ -311,7 +468,7 @@ blockquote p {
 img {
     height: auto;
     /* Make sure images are scaled correctly. */
-    max-width: 100%;
+    
     /* Adhere to container width. */
 }
 button, input, select, textarea {
@@ -454,7 +611,7 @@ article.sticky.post {
     margin: 0 0 1.5em;
 }
 .main-content-area {
-    margin-top: 40px;
+   
     margin-bottom: 40px;
 }
 
@@ -778,6 +935,8 @@ article.grid iframe {
     transition: opacity 0.3s linear;
     display: block;
     margin: auto;
+	width: 120% !important;
+margin-left: -11%;
 }
 .single-featured:hover {
     opacity: 0.8;
@@ -1050,6 +1209,11 @@ ul.children, ul.children li {
 #logo {
     width: 145px;
 height: 75px;
+margin:-21%;
+img{
+	height:auto;
+	width:100%;
+}
 }
 a.custom-logo-link {
     display: block;
@@ -1100,7 +1264,7 @@ article.post .post-categories a:hover, .entry-title a:hover, .entry-meta a:hover
     color: #a161bf;
 }
 button, html input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, .comment-form #submit:hover {
-    background: #a161bf;
+    background: #f44336;
     color: #fff;
 }
 div.flex-caption {
@@ -1143,7 +1307,7 @@ div.flex-caption {
     text-transform: uppercase;
 }
 .navbar.navbar-default {
-    background-color: #ffffff;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0;
     font-weight: 400;
@@ -1152,9 +1316,9 @@ div.flex-caption {
     box-shadow: 0 0 2px #e3e3e3;
 }
 .navbar-default .navbar-nav> li> a {
-    color: #1c202a;
+    color: white;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     margin-right: 25px;
     line-height: 2.6;
@@ -1187,17 +1351,17 @@ div.flex-caption {
 }
 .navbar-default .navbar-nav> .active> a, .navbar-default .navbar-nav> .active> a:hover, .navbar-default .navbar-nav> .active> a:focus, .navbar-default .navbar-nav> li> a:hover, .navbar-default .navbar-nav> li> a:focus, .navbar-default .navbar-nav> .open> a, .navbar-default .navbar-nav> .open> a:hover, .navbar-default .navbar-nav> .open> a:focus {
     color: white;
-    background-color: #1e77c3;
+    background-color: red;
 }
 .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus, .navbar-default .navbar-nav .open .dropdown-menu> li> a:hover, .navbar-default .navbar-nav .open .dropdown-menu> li> a:focus {
     color: #fff;
-    background-color: #a161bf;
+    background-color: red;
 }
 .dropdown-menu li {
     position: relative;
 }
 .navbar-collapse {
-    float: left;
+    float: right;
     padding: 0;
 }
 .nav-search {
@@ -1629,8 +1793,9 @@ p.logged-in-as {
 ----------------------------------------------- */
 
 #footer-area {
-    background-color: #0b82b1;
+    background-color: black;
     color: #999;
+	height:450px;
 }
 #footer-area .footer-widget-area {
     padding: 40px 0 20px 0;
@@ -1688,20 +1853,21 @@ p.logged-in-as {
     background-color: transparent;
 }
 .scroll-to-top {
-    background: #363636;
+    
     background: rgba(100, 100, 100, 0.4);
     color: #FFF;
-    bottom: 4%;
+    bottom: 6%;
     cursor: pointer;
     display: none;
     position: fixed;
-    right: 20px;
+    right: 26px;
     z-index: 999;
-    font-size: 16px;
+    font-size: 32px;
     text-align: center;
     line-height: 35px;
-    width: 35px;
+    width: 44px;
     border-radius: 50%;
+	background-color:red;
     -webkit-transition: background-color 0.3s linear;
     -moz-transition: background-color 0.3s linear;
     -o-transition: background-color 0.3s linear;

@@ -8,6 +8,17 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+
+ function language_selector(){
+    $languages = icl_get_languages('skip_missing=0&orderby=code');
+    if(!empty($languages)){
+        foreach($languages as $l){
+            if(!$l['active']){ 
+                echo '<a class="language_a" href="'.$l['url'].'">' . $l['language_code'] . '</a>';
+            }
+        }
+    }
+}
 if ( ! isset( $content_width ) ) {
 	$content_width = 697; /* pixels */
 }
@@ -49,6 +60,9 @@ if ( ! function_exists( 'activello_setup' ) ) :
  */
 function activello_setup() {
 
+
+
+
   /*
    * Make theme available for translation.
    * Translations can be filed in the /languages/ directory.
@@ -65,7 +79,7 @@ function activello_setup() {
    */
   add_theme_support( 'post-thumbnails' );
 
-  add_image_size( 'activello-featured', 1170, 550, true );
+  add_image_size( 'activello-featured', 1259, 550, true );
   add_image_size( 'activello-slider', 1920, 550, true );
   add_image_size( 'activello-thumbnail', 330, 220, true );
   add_image_size( 'activello-medium', 640, 480, true );
