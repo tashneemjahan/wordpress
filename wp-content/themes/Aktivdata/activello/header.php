@@ -95,8 +95,14 @@
 			</div>
 			
 		</nav><!-- .site-navigation -->
-
+<?php //the_post_thumbnail( 'activello-featured', array( 'class' => 'single-featured' )); ?>
 	</header><!-- #masthead -->
+	<div class="feature_img_role">
+	
+				
+<?php the_post_thumbnail( 'activello-featured', array( 'class' => 'div_feature_img' )); ?>
+
+</div>
 
 
 	<div id="content" class="site-content">

@@ -8,7 +8,7 @@
  
 ?>
 
-<?php the_post_thumbnail( 'activello-featured', array( 'class' => 'single-featured' )); ?>
+
 
 
 <div class="post-inner-content">

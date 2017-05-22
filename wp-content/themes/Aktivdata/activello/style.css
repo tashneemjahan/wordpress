@@ -16,7 +16,85 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
 
 */
 
+a.back_link:hover{
+	background-image:url("http://localhost/wordpress/wp-content/themes/Aktivdata/activello/inc/welcome-screen/img/logo.png");
+.back_link
 
+	}
+.feature_img_role
+{
+	height: 600px;
+	position: relative;
+	
+}
+@media screen and (max-width: 301px) and (min-width:100px)  {
+
+   .div_feature_img
+	{
+        height: 40%;
+		width: 100%;
+    }
+	.feature_img_role
+{
+	height: 200px;
+	position: relative;
+	
+}
+}
+@media screen and (max-width: 499px) and (min-width: 320px) {
+
+   .div_feature_img
+	{
+        height: 60%;
+		width: 100%;
+    }
+	.feature_img_role
+{
+	height: 200px;
+	position: relative;
+	
+}
+}
+@media screen and (max-width: 699px) and (min-width: 520px) {
+
+   .div_feature_img
+	{
+        height: 80%;
+		width: 100%;
+    }
+	.feature_img_role
+{
+	height: 500px;
+	position: relative;
+	
+}
+}
+
+
+
+.div_feature_img
+{
+position: absolute;
+width: 100%;
+height: 100%;
+min-height: 242px;
+left: 0;
+top: 0;
+
+
+}
+.img_boxes1
+{
+		
+        height: 240;
+        max-height: 500px;
+		max-width:100%;
+        overflow: hidden;
+}
+ .img_boxes1 img{
+       width: 100%;
+       height: 100%;
+     }
 #myDIV
 {
 	display: none;
@@ -31,8 +109,15 @@ margin-top: -15px;
 .language_a
 	{
 		color: white;
-	padding: 8px;
+		padding: 8px;
+		font-size:22px;
 	}
+a.language_a:hover
+{
+	background-color:white;
+	color:black;
+	
+}
 
 .new-col
 {
@@ -54,10 +139,10 @@ height: 55px;
 }
 
 /* Email field */
-#nf-field-2-wrap:before {
+#nf-field-2-wrap {
  font-family: 'FontAwesome';
  content: "\f2ba"; /* Icon name */
- padding: 2px 7px 0 0;
+ 
  
 }
 
@@ -76,7 +161,7 @@ height: 55px;
 }
 .ninja-forms-field {
  padding: 12px;
-     border: 1px solid #B7ABAB;
+ border: 1px solid #B7ABAB;
 }
  
  #nf-field-4 {
@@ -85,15 +170,17 @@ width: 150px;
 color: white;
 font-size: 22px;
 float:right;
+
  }
+ 
 #nf-field-65
 {
 	padding:16px;
 }
 #nf-field-4:hover{
- background-color: black;
- box-shadow: 1px 1px 2px white;
+ background-color: red;
  text-shadow: 5px 5px 8px black;
+ color:white;
  }
 body {
     color: #696969;
@@ -145,7 +232,8 @@ body {
 .imgcontainer_table
 {
 	text-align: left;
-	width:400px;
+width: 377px;
+margin-top: -27px;
 }
 table.table_subscription
 {
@@ -395,14 +483,10 @@ a {
     transition: all 0.3s;
 }
 a:hover, a:focus {
-    color: red;
+    
     text-decoration: none;
 }
-a:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-}
+
 .single .entry-content a {
     color: #a161bf;
 }
@@ -417,7 +501,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 30px 0;
 }
 .container {
-    max-width: 1090px;
+    max-width: 1101px;
 }
 h1, .h1 {
     font-size: 28px;
@@ -935,11 +1019,11 @@ article.grid iframe {
     transition: opacity 0.3s linear;
     display: block;
     margin: auto;
-	width: 120% !important;
-margin-left: -11%;
+	width: 100% !important;
+
 }
 .single-featured:hover {
-    opacity: 0.8;
+    
 }
 .wp-caption {
     border: 1px solid #ddd;
@@ -1795,7 +1879,7 @@ p.logged-in-as {
 #footer-area {
     background-color: black;
     color: #999;
-	height:450px;
+	height:auto;
 }
 #footer-area .footer-widget-area {
     padding: 40px 0 20px 0;
